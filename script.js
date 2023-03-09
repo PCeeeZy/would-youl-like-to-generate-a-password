@@ -60,8 +60,6 @@ function confirmSpecial() {
 
 function promptLength() {
   const desiredLength = prompt('What is the desired length of your password? (Must be greater than 8 and less than 128')
-  console.log(desiredLength);
-  console.log(isNaN(desiredLength))
   if (isNaN(desiredLength)) {
     alert('Please enter only a number');
     return promptLength();
